@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICONS BY LOTTIFILES  -->
+    <!-- Unicons by <a href="https://iconscout.com/">Iconscout</a> -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <title>Medical Clinic - Login</title>
+  </head>
+  <body>
+    <header
+      class="header login-header"
+    >
+      <nav class="nav container-lg flex flex-jc_sb flex-ai_c">
+        <div class="nav__logo">
+          <a href="../index.html" class="txt-uppercase">
+            Medical <strong>Clinic</strong>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="login flex flex-jc_c flex-ai_c">
+        <div class=" flex flex-jc_c flex-ai_c container">
+          <div class="login-form">
+            <div>
+              <h1 class="login__title">Welcome back</h1>
+              <p class="login__subtitle">
+                Welcome back! please enter your details.
+              </p>
+            </div>
+            <form action="" class="login__form">
+              <label for="login__email" class="login__label">Email</label>
+              <input
+                type="email"
+                id="login__email"
+                class="login__input"
+                placeholder="Enter your email"
+              />
+              <label for="login__password" class="login__label"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="login__password"
+                class="login__input"
+                placeholder="Enter your password"
+              />
+              <div class="login__options flex flex-jc_sb">
+                <div class="login__checkbox flex">
+                  <label class="container-text"
+                    >Remember for 30 days
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <a href="" class="login__forgopassword">Forgot password?</a>
+              </div>
+                <button class="login__button btn--secondary">Sign in</button>
+                <button class="login__button btn--google"><div class="icon-google"></div>Sign in with Google</button>    
+            </form>
+            <div class="login__link flex flex-wrap flex-jc_c">
+                <p>Don't have an account?</p>
+                <a href="/pages/register.html">Sign up for free</a>
+            </div>
+          </div>
+        </div>
+        <div class="login__img"></div>
+      </div>
+    </main>
+  </body>
+</html>
