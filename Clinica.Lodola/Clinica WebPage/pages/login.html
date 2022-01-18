@@ -15,9 +15,7 @@
     <title>Medical Clinic - Login</title>
   </head>
   <body>
-    <header
-      class="header login-header"
-    >
+    <header class="header login-header">
       <nav class="nav container-lg flex flex-jc_sb flex-ai_c">
         <div class="nav__logo">
           <a href="../index.html" class="txt-uppercase">
@@ -28,7 +26,7 @@
     </header>
     <main>
       <div class="login flex flex-jc_c flex-ai_c">
-        <div class=" flex flex-jc_c flex-ai_c container">
+        <div class="flex flex-jc_c flex-ai_c container slide-in-left">
           <div class="login-form">
             <div>
               <h1 class="login__title">Welcome back</h1>
@@ -44,9 +42,7 @@
                 class="login__input"
                 placeholder="Enter your email"
               />
-              <label for="login__password" class="login__label"
-                >Password</label
-              >
+              <label for="login__password" class="login__label">Password</label>
               <input
                 type="password"
                 id="login__password"
@@ -63,16 +59,55 @@
                 </div>
                 <a href="" class="login__forgopassword">Forgot password?</a>
               </div>
-                <button class="login__button btn--secondary">Sign in</button>
-                <button class="login__button btn--google"><div class="icon-google"></div>Sign in with Google</button>    
+              <button type="button" class="login__button btn--secondary">
+                Sign in
+              </button>
+              <button type="button" class="login__button btn--google">
+                <div class="icon-google"></div>
+                Sign in with Google
+              </button>
             </form>
             <div class="login__link flex flex-wrap flex-jc_c">
-                <p>Don't have an account?</p>
-                <a href="/pages/register.html">Sign up for free</a>
+              <p>Don't have an account?</p>
+              <a href="/pages/register.html">Sign up for free</a>
             </div>
           </div>
         </div>
-        <div class="login__img"></div>
+        <div class="login__img slide-in-right flex flex-jc_c">
+          <div class="login__card">
+            <div class="login__comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                quia dolorem, mollitia ducimus non incidunt in optio et veniam
+                impedit.
+              </p>
+            </div>
+            <div class="login__card-content">
+              <div class="login__user">
+                <h2>Andi Lane</h2>
+                <h3>Founder, Catalog</h3>
+                <p>Web Design Agency</p>
+              </div>
+              <div class="login__card-options">
+                <div class="login__stars">
+                  <img src="/img/login-stars.svg" alt="stars" />
+                </div>
+                <div class="login__arrows">
+                  <img
+                    src="/img/login-arrow-left.svg"
+                    alt="flecha izquierda"
+                    class="arrow-circle-left"
+                  />
+                  <img
+                    src="/img/login-arrow-right.svg"
+                    alt="flecha derecha"
+                    class="arrow-circle-right"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>
