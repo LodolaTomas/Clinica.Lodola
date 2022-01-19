@@ -854,11 +854,11 @@ input:checked ~ .checkmark:after {
   background-position: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 50px 0 0 50px;
-  background-image: url(/img/young-doctor.jpg);
+  background-image: url(img/young-doctor.jpg);
 }
 
 .icon-google {
-  background-image: url(/img/icon-google.svg);
+  background-image: url(img/icon-google.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
