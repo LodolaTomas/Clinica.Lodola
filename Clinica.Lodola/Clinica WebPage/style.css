@@ -886,7 +886,7 @@ input:checked ~ .checkmark:after {
   border: 1px solid #707070;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .login__img {
     display: none;
   }
