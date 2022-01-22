@@ -191,11 +191,6 @@ a:hover {
             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
 }
 
-/* .animation__img:hover{
-  -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-} */
-
 .scale-in-center {
 	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
 	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
