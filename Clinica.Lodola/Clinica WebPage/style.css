@@ -68,12 +68,25 @@ html {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #2156AA;
+}
+
 body {
   /* margin: 0 0 var(--header-height) 0; */
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--title-text);
+  overflow-x: hidden;
 }
 
 h1,
@@ -886,7 +899,6 @@ strong {
 .login__label {
   display: block;
   font-size: var(--h2-font-size);
-  margin-bottom: 10px;
   font-weight: 700;
 }
 
