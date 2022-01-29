@@ -39,35 +39,51 @@
                 Welcome back! please enter your details.
               </p>
             </div>
-            <form action="" class="login__form">
-              <label for="login__email" class="login__label">Email</label>
-              <input
-                type="email"
-                id="login__email"
-                class="login__input"
-                placeholder="Enter your email"
-              />
-              <label for="login__password" class="login__label">Password</label>
+            <form action="" class="login__form needs-validation" novalidate>
+              <div class="position-relative">
+                <label for="login__email" class="login__label">Email</label>
+                <input
+                  type="email"
+                  id="login__email"
+                  class="login__input form-control"
+                  placeholder="Enter your email"
+                />
+                <div class="invalid-tooltip">
+                  Please enter a valid email address.
+                </div>
+              </div>
+              <div class="position-relative">
+                <label for="login__password" class="login__label">Password</label>
               <input
                 type="password"
                 id="login__password"
-                class="login__input"
+                class="login__input form-control"
                 placeholder="Enter your password"
               />
+              <div class="invalid-tooltip">
+                Please enter a password.
+              </div>
+              </div>
               <div class="login__options flex flex-jc_sb">
                 <div class="login__checkbox flex">
                   <label class="container-text"
                     >Remember for 30 days
-                    <input type="checkbox" />
+                    <input type="checkbox" class="form-check-input" />
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <a href="" class="login__forgopassword">Forgot password?</a>
               </div>
-              <button type="button" class="login__button btn--secondary scale-in-center">
+              <button
+                type="submit"
+                class="login__button btn--secondary scale-in-center"
+              >
                 Sign in
               </button>
-              <button type="button" class="login__button btn--google scale-in-center">
+              <button
+                type="button"
+                class="login__button btn--google scale-in-center"
+              >
                 <div class="icon-google"></div>
                 Sign in with Google
               </button>
@@ -78,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="login__img  flex flex-jc_c animation__img">
+        <div class="login__img flex flex-jc_c animation__img">
           <div class="login__card">
             <div class="login__comments">
               <p>

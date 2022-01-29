@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ICONS BY LOTTIFILES  -->
     <!-- Unicons by <a href="https://iconscout.com/">Iconscout</a> -->
+    <!-- CSS -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <!-- CSS -->
+    <!-- BOOTSTRAP 5.1.3 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -47,108 +48,337 @@
             <h1>Get Started</h1>
             <p>Create your account</p>
           </div>
-          <form action="" class="register__form row align-content-center">
-            <div class="col-12 col-sm-4">
-              <label for="login__email" class="login__label">Email</label>
-              <input
-                type="email"
-                id="login__email"
-                class="login__input"
-                placeholder="Enter your email"
-              />
-              <label for="login__password" class="login__label">Password</label>
-              <input
-                type="password"
-                id="login__password"
-                class="login__input"
-                placeholder="Enter your password"
-              />
-              <label for="login__password" class="login__label">Age</label>
-              <input
-                type="password"
-                id="login__password"
-                class="login__input"
-                placeholder="Enter your password"
-              />
-            </div>
-            <div class="col-12 col-sm-4">
-              <label for="login__email" class="login__label">Name</label>
-              <input
-                type="email"
-                id="login__email"
-                class="login__input"
-                placeholder="Enter your email"
-              />
-              <label for="login__password" class="login__label">LastName</label>
-              <input
-                type="password"
-                id="login__password"
-                class="login__input"
-                placeholder="Enter your password"
-              />
-              <label for="login__password" class="login__label"
-                >Social Work</label
-              >
-              <input
-                type="password"
-                id="login__password"
-                class="login__input"
-                placeholder="Enter your password"
-              />
-            </div>
-            <div class="col-12 col-sm-4">
-              <label for="login__email" class="login__label">DNI</label>
-              <input
-                type="email"
-                id="login__email"
-                class="login__input"
-                placeholder="Enter your email"
-              />
-              <input type="file" name="file" id="file" class="inputfile" />
-              <label for="file"
-                ><p class="label-text">Profile Picture</p></label
-              >
-            </div>
-            <div class="register__options">
-              <div class="login__checkbox flex">
-                <label class="container-text"
-                  >Yes, I want to receive Medical<strong>Clinic</strong> emails.
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
+          <div class="forms">
+            <form
+              id="register-patient"
+              action=""
+              class="register__form row align-content-center needs-validation"
+              novalidate
+            >
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__email" class="login__label">Email</label>
+                <input
+                  type="email"
+                  id="login__email"
+                  class="login__input form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a email.</div>
               </div>
-              <div class="login__checkbox flex">
-                <label class="container-text"
-                  >I agree the <strong>Terms</strong>,
-                  <strong>Privacy Policy</strong> and <strong>Fees</strong>.
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-
-              <button
-                type="button"
-                class="login__button btn--secondary scale-in-center"
-              >
-                Sign in
-              </button>
-              <button
-                type="button"
-                class="login__button btn--google scale-in-center"
-              >
-                <div class="icon-google"></div>
-                Sign in with Google
-              </button>
-              <p class="register__member">
-                Already a member?
-                <a href="../pages/login.html" class="login__forgopassword"
-                  >Log in.</a
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label"
+                  >Password</label
                 >
-              </p>
-            </div>
-          </form>
+                <input
+                  type="password"
+                  id="login__password"
+                  class="login__input form-control"
+                  placeholder="Enter your password"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a password.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label">Age</label>
+                <input
+                  type="number"
+                  id="login__password"
+                  class="login__input form-control"
+                  placeholder="Enter your password"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a age.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__email" class="login__label">Name</label>
+                <input
+                  type="text"
+                  id="login__email"
+                  class="login__input form-control"
+                  placeholder="Enter your Name"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a Name.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label"
+                  >LastName</label
+                >
+                <input
+                  type="text"
+                  id="login__password"
+                  class="login__input form-control"
+                  placeholder="Enter your lastName"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a LastName.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <input
+                  type="file"
+                  name="file"
+                  id="file"
+                  class="inputfile"
+                  required
+                />
+                <label for="file"
+                  ><p class="label-text">Profile Picture</p></label
+                >
+                <div class="invalid-tooltip">
+                  Please enter a profile picture.
+                </div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label"
+                  >Social Work</label
+                >
+                <input
+                  type="text"
+                  id="login__password"
+                  class="login__input form-control"
+                  placeholder="Enter your Social Work"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a social work.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__email" class="login__label">DNI</label>
+                <input
+                  type="number"
+                  id="login__email"
+                  class="login__input form-control"
+                  placeholder="Enter your DNI"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a DNI.</div>
+              </div>
+              <div class="register__options">
+                <div class="login__checkbox flex">
+                  <label class="container-text"
+                    >Yes, I want to receive Medical<strong>Clinic</strong>
+                    emails.
+                    <input type="checkbox" class="form-check-input" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="login__checkbox flex">
+                  <label class="container-text"
+                    >I agree the <strong>Terms</strong>,
+                    <strong>Privacy Policy</strong> and <strong>Fees</strong>.
+                    <input type="checkbox" class="form-check-input" required />
+                    <span class="checkmark"></span>
+                    <div class="invalid-tooltip">
+                      Accept Terms and Privacy Policy and Fees
+                    </div>
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="login__button btn--secondary scale-in-center"
+                >
+                  Sign in
+                </button>
+                <button
+                  type="button"
+                  class="login__button btn--google scale-in-center"
+                >
+                  <div class="icon-google"></div>
+                  Sign in with Google
+                </button>
+                <p class="register__member">
+                  Already a member?
+                  <a href="../pages/login.html" class="login__forgopassword"
+                    >Log in.</a
+                  >
+                </p>
+              </div>
+            </form>
+            <form
+              id="register-medical"
+              action=""
+              class="register__form row align-content-center display-none needs-validation"
+              novalidate
+            >
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__email" class="login__label">Email</label>
+                <input
+                  type="email"
+                  id="login__email"
+                  class="login__input form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a email.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  id="login__password"
+                  class="login__input form-control"
+                  placeholder="Enter your password"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a password.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label">Age</label>
+                <input
+                  type="number"
+                  id="login__password"
+                  class="login__input form-control"
+                  placeholder="Enter your Age"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a age.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__email" class="login__label">Name</label>
+                <input
+                  type="text"
+                  id="login__email"
+                  class="login__input form-control"
+                  placeholder="Enter your Name"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a name.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label"
+                  >LastName</label
+                >
+                <input
+                  type="password"
+                  id="login__password"
+                  class="login__input form-control"
+                  placeholder="Enter your LastName"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a last name.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label"
+                  >Social Work</label
+                >
+                <input
+                  type="text"
+                  id="login__password"
+                  class="login__input form-control"
+                  placeholder="Enter your Social Work"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a Social Work.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__email" class="login__label">DNI</label>
+                <input
+                  type="number"
+                  id="login__email"
+                  class="login__input form-control"
+                  placeholder="Enter your DNI"
+                  required
+                />
+                <div class="invalid-tooltip">Please enter a dni.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__email" class="login__label"
+                  >Select your specialties</label
+                >
+                <input
+                  type="text"
+                  id="login__email"
+                  class="login__input form-control"
+                  placeholder="Enter your specialties"
+                />
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label"
+                  >Add specialty</label
+                >
+                <input
+                  type="text"
+                  id="login__password"
+                  class="login__input form-control"
+                  placeholder="Enter your specialty"
+                />
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <label for="login__password" class="login__label"
+                  >Specialty</label
+                >
+                <textarea
+                  class="form-control textarea"
+                  id="login__password"
+                  placeholder="Specilty"
+                  required
+                ></textarea>
+                <div class="invalid-tooltip">Please enter a specialties.</div>
+              </div>
+              <div class="col-12 col-sm-4 position-relative">
+                <input
+                  type="file"
+                  name="file"
+                  id="file"
+                  class="inputfile form-control"
+                  required
+                />
+                <label for="file"
+                  ><p class="label-text">Profile Picture</p></label
+                >
+                <div class="invalid-tooltip">
+                  Example invalid form file feedback
+                </div>
+              </div>
+              <div class="register__options">
+                <div class="login__checkbox flex">
+                  <label class="container-text"
+                    >Yes, I want to receive Medical<strong>Clinic</strong>
+                    emails.
+                    <input type="checkbox" class="form-check-input" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="login__checkbox flex">
+                  <label class="container-text"
+                    >I agree the <strong>Terms</strong>,
+                    <strong>Privacy Policy</strong> and <strong>Fees</strong>.
+                    <input type="checkbox" class="form-check-input" required />
+                    <span class="checkmark"></span>
+                    <div class="invalid-tooltip">
+                      Accept Terms and Privacy Policy and Fees
+                    </div>
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="login__button btn--secondary scale-in-center"
+                >
+                  Sign in
+                </button>
+                <button
+                  type="button"
+                  class="login__button btn--google scale-in-center"
+                >
+                  <div class="icon-google"></div>
+                  Sign in with Google
+                </button>
+                <p class="register__member">
+                  Already a member?
+                  <a href="../pages/login.html" class="login__forgopassword"
+                    >Log in.</a
+                  >
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="register__img flex flex-jc_c animation__img">
+        <div
+          id="register-img"
+          class="register__img flex flex-jc_c animation__img"
+        >
           <div class="login__card">
             <div class="login__comments">
               <p>
@@ -189,24 +419,39 @@
 
   <script>
     "use strict";
-
-    var switchButton = document.querySelector(".switch-button");
-    var switchBtnRight = document.querySelector(".switch-button-case.right");
-    var switchBtnLeft = document.querySelector(".switch-button-case.left");
-    var activeSwitch = document.querySelector(".active");
-
+    const switchButton = document.querySelector(".switch-button");
+    const switchBtnRight = document.querySelector(".switch-button-case.right");
+    const switchBtnLeft = document.querySelector(".switch-button-case.left");
+    const activeSwitch = document.querySelector(".active");
+    const formPatient = document.getElementById("register-patient");
+    const formMedical = document.getElementById("register-medical");
+    const registerImg = document.getElementById("register-img");
     function switchLeft() {
       switchBtnRight.classList.remove("active-case");
       switchBtnLeft.classList.add("active-case");
       activeSwitch.style.left = "0%";
+      formMedical.classList.add("slide-out-right");
+      setTimeout(() => {
+        registerImg.classList.remove("display-none");
+        formMedical.classList.add("display-none");
+        formPatient.classList.remove("slide-out-left");
+        formPatient.classList.remove("display-none");
+        formPatient.classList.add("slide-in-left");
+      }, 500);
     }
-
     function switchRight() {
       switchBtnRight.classList.add("active-case");
       switchBtnLeft.classList.remove("active-case");
       activeSwitch.style.left = "50%";
+      formPatient.classList.add("slide-out-left");
+      setTimeout(() => {
+        registerImg.classList.add("display-none");
+        formPatient.classList.add("display-none");
+        formMedical.classList.remove("slide-out-right");
+        formMedical.classList.remove("display-none");
+        formMedical.classList.add("slide-in-right");
+      }, 500);
     }
-
     switchBtnLeft.addEventListener(
       "click",
       function () {
@@ -214,7 +459,6 @@
       },
       false
     );
-
     switchBtnRight.addEventListener(
       "click",
       function () {
@@ -222,6 +466,20 @@
       },
       false
     );
+    const forms = document.querySelectorAll(".needs-validation");
+    Array.prototype.slice.call(forms).forEach((form) => {
+      form.addEventListener(
+        "submit",
+        (event) => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    });
   </script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
