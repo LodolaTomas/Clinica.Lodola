@@ -48,13 +48,6 @@
   animation-name: slide-in-right;
 }
 
-.animation__img {
-  -webkit-transform: translateZ(50px);
-  transform: translateZ(50px);
-  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-}
-
 .scale-in-center {
   -webkit-animation-delay: 1s;
   -webkit-animation-duration: 0.5s;
@@ -1617,6 +1610,10 @@ input:checked ~ .checkmark:after {
   background-position: center;
   border-radius: 50px 0 0 50px;
   background-image: url(../img/young-doctor.jpeg);
+  -webkit-transform: translateZ(50px);
+  transform: translateZ(50px);
+  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
 }
 
 .textarea {
