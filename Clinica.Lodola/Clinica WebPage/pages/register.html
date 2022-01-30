@@ -377,7 +377,7 @@
         </div>
         <div
           id="register-img"
-          class="register__img flex flex-jc_c animation__img"
+          class="register__img flex flex-jc_c slide-in-right"
         >
           <div class="login__card">
             <div class="login__comments">
@@ -431,7 +431,9 @@
       switchBtnLeft.classList.add("active-case");
       activeSwitch.style.left = "0%";
       formMedical.classList.add("slide-out-right");
+      registerImg.classList.remove("slide-out-right");
       setTimeout(() => {
+        registerImg.classList.add("slide-in-right");
         registerImg.classList.remove("display-none");
         formMedical.classList.add("display-none");
         formPatient.classList.remove("slide-out-left");
@@ -444,6 +446,7 @@
       switchBtnLeft.classList.remove("active-case");
       activeSwitch.style.left = "50%";
       formPatient.classList.add("slide-out-left");
+      registerImg.classList.add("slide-out-right");
       setTimeout(() => {
         registerImg.classList.add("display-none");
         formPatient.classList.add("display-none");

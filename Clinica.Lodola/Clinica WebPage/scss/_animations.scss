@@ -46,13 +46,6 @@
     @include animation(0,1s,slide-in-right);
 }
 
-.animation__img {
-  -webkit-transform: translateZ(50px);
-  transform: translateZ(50px);
-  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-}
-
 .scale-in-center {
   @include animation(1s,.5s,scale-in-center);
 }
