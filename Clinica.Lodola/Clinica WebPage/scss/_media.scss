@@ -60,7 +60,7 @@
   }
   @media (max-width: 711px) {
     .section__header-content-img {
-      display: none;
+      display: none !important;
     }
   }
   @media (max-width: 767px) {
