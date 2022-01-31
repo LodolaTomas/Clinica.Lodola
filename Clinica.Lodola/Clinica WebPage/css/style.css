@@ -1220,12 +1220,15 @@ strong {
   margin: 0;
   border: none;
   background-color: #2c70dd;
+  overflow: hidden;
 }
 
 .footer__footer-btn i::before {
+  left: -3px;
   color: #fff;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: relative;
 }
 
 .login-header {

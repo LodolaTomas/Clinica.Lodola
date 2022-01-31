@@ -539,10 +539,14 @@ strong {
   margin: 0;
   border: none;
   background-color: $first-color;
+  overflow: hidden;
   i {
     &::before {
+      left: -3px;
       color: #fff;
+      -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
+      position: relative;
     }
   }
 }
@@ -763,7 +767,6 @@ input {
   height: 2rem;
   cursor: pointer;
 }
-
 
 .register {
   min-height: 750px;
