@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Medical Clinic - Register</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Registro de usuarios de la medical clinic para pacientes y medicos">
+    <meta name="keywords" content="registro, registro medicos, registro pacientes, medical clinic registro">
     <!-- ICONS BY LOTTIFILES  -->
     <!-- Unicons by <a href="https://iconscout.com/">Iconscout</a> -->
     <!-- CSS -->
@@ -19,7 +22,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Medical Clinic - Register</title>
   </head>
   <body>
     <header class="header login-header">
@@ -56,10 +58,10 @@
               novalidate
             >
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__email" class="login__label">Email</label>
+                <label for="patient-email" class="login__label">Email</label>
                 <input
                   type="email"
-                  id="login__email"
+                  id="patient-email"
                   class="login__input form-control"
                   placeholder="Enter your email"
                   required
@@ -67,12 +69,10 @@
                 <div class="invalid-tooltip">Please enter a email.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label"
-                  >Password</label
-                >
+                <label for="patient-password" class="login__label">Password</label>
                 <input
                   type="password"
-                  id="login__password"
+                  id="patient-password"
                   class="login__input form-control"
                   placeholder="Enter your password"
                   required
@@ -80,10 +80,10 @@
                 <div class="invalid-tooltip">Please enter a password.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label">Age</label>
+                <label for="patient-age" class="login__label">Age</label>
                 <input
                   type="number"
-                  id="login__password"
+                  id="patient-age"
                   class="login__input form-control"
                   placeholder="Enter your password"
                   required
@@ -91,10 +91,10 @@
                 <div class="invalid-tooltip">Please enter a age.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__email" class="login__label">Name</label>
+                <label for="patient-name" class="login__label">Name</label>
                 <input
                   type="text"
-                  id="login__email"
+                  id="patient-name"
                   class="login__input form-control"
                   placeholder="Enter your Name"
                   required
@@ -102,12 +102,10 @@
                 <div class="invalid-tooltip">Please enter a Name.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label"
-                  >LastName</label
-                >
+                <label for="patient-lastName" class="login__label">LastName</label>
                 <input
                   type="text"
-                  id="login__password"
+                  id="patient-lastName"
                   class="login__input form-control"
                   placeholder="Enter your lastName"
                   required
@@ -116,13 +114,13 @@
               </div>
               <div class="col-12 col-sm-4 position-relative">
                 <input
+                  title="file"
                   type="file"
-                  name="file"
-                  id="file"
+                  id="patient-img"
                   class="inputfile"
                   required
                 />
-                <label for="file"
+                <label for="patient-img"
                   ><p class="label-text">Profile Picture</p></label
                 >
                 <div class="invalid-tooltip">
@@ -130,12 +128,12 @@
                 </div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label"
+                <label for="patient-socialWork" class="login__label"
                   >Social Work</label
                 >
                 <input
                   type="text"
-                  id="login__password"
+                  id="patient-socialWork"
                   class="login__input form-control"
                   placeholder="Enter your Social Work"
                   required
@@ -143,10 +141,10 @@
                 <div class="invalid-tooltip">Please enter a social work.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__email" class="login__label">DNI</label>
+                <label for="patient-dni" class="login__label">DNI</label>
                 <input
                   type="number"
-                  id="login__email"
+                  id="patient-dni"
                   class="login__input form-control"
                   placeholder="Enter your DNI"
                   required
@@ -201,10 +199,10 @@
               novalidate
             >
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__email" class="login__label">Email</label>
+                <label for="medical-email" class="login__label">Email</label>
                 <input
                   type="email"
-                  id="login__email"
+                  id="medical-email"
                   class="login__input form-control"
                   placeholder="Enter your email"
                   required
@@ -212,12 +210,12 @@
                 <div class="invalid-tooltip">Please enter a email.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label"
+                <label for="medical-password" class="login__label"
                   >Password</label
                 >
                 <input
                   type="password"
-                  id="login__password"
+                  id="medical-password"
                   class="login__input form-control"
                   placeholder="Enter your password"
                   required
@@ -225,10 +223,10 @@
                 <div class="invalid-tooltip">Please enter a password.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label">Age</label>
+                <label for="medical-age" class="login__label">Age</label>
                 <input
                   type="number"
-                  id="login__password"
+                  id="medical-age"
                   class="login__input form-control"
                   placeholder="Enter your Age"
                   required
@@ -236,10 +234,10 @@
                 <div class="invalid-tooltip">Please enter a age.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__email" class="login__label">Name</label>
+                <label for="medical-name" class="login__label">Name</label>
                 <input
                   type="text"
-                  id="login__email"
+                  id="medical-name"
                   class="login__input form-control"
                   placeholder="Enter your Name"
                   required
@@ -247,12 +245,12 @@
                 <div class="invalid-tooltip">Please enter a name.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label"
+                <label for="medical-lastName" class="login__label"
                   >LastName</label
                 >
                 <input
                   type="password"
-                  id="login__password"
+                  id="medical-lastName"
                   class="login__input form-control"
                   placeholder="Enter your LastName"
                   required
@@ -260,12 +258,12 @@
                 <div class="invalid-tooltip">Please enter a last name.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label"
+                <label for="medical-socialWork" class="login__label"
                   >Social Work</label
                 >
                 <input
                   type="text"
-                  id="login__password"
+                  id="medical-socialWork"
                   class="login__input form-control"
                   placeholder="Enter your Social Work"
                   required
@@ -273,10 +271,10 @@
                 <div class="invalid-tooltip">Please enter a Social Work.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__email" class="login__label">DNI</label>
+                <label for="medical-dni" class="login__label">DNI</label>
                 <input
                   type="number"
-                  id="login__email"
+                  id="medical-dni"
                   class="login__input form-control"
                   placeholder="Enter your DNI"
                   required
@@ -284,34 +282,34 @@
                 <div class="invalid-tooltip">Please enter a dni.</div>
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__email" class="login__label"
+                <label for="medical-specialties" class="login__label"
                   >Select your specialties</label
                 >
                 <input
                   type="text"
-                  id="login__email"
+                  id="medical-specialties"
                   class="login__input form-control"
                   placeholder="Enter your specialties"
                 />
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label"
+                <label for="medical-specialty" class="login__label"
                   >Add specialty</label
                 >
                 <input
                   type="text"
-                  id="login__password"
+                  id="medical-specialty"
                   class="login__input form-control"
                   placeholder="Enter your specialty"
                 />
               </div>
               <div class="col-12 col-sm-4 position-relative">
-                <label for="login__password" class="login__label"
+                <label for="txtarea-specialty" class="login__label"
                   >Specialty</label
                 >
                 <textarea
                   class="form-control textarea"
-                  id="login__password"
+                  id="txtarea-specialty"
                   placeholder="Specilty"
                   required
                 ></textarea>
@@ -321,11 +319,11 @@
                 <input
                   type="file"
                   name="file"
-                  id="file"
+                  id="medical-file"
                   class="inputfile form-control"
                   required
                 />
-                <label for="file"
+                <label for="medical-file"
                   ><p class="label-text">Profile Picture</p></label
                 >
                 <div class="invalid-tooltip">
@@ -432,28 +430,28 @@
       activeSwitch.style.left = "0%";
       formMedical.classList.add("slide-out-right");
       registerImg.classList.remove("slide-out-right");
+      registerImg.classList.add("slide-in-right");
       setTimeout(() => {
-        registerImg.classList.add("slide-in-right");
+        formPatient.classList.remove("display-none");
+        formPatient.classList.remove("slide-out-left");
         registerImg.classList.remove("display-none");
         formMedical.classList.add("display-none");
-        formPatient.classList.remove("slide-out-left");
-        formPatient.classList.remove("display-none");
         formPatient.classList.add("slide-in-left");
-      }, 500);
+      }, 300);
     }
     function switchRight() {
+      registerImg.classList.add("slide-out-right");
       switchBtnRight.classList.add("active-case");
       switchBtnLeft.classList.remove("active-case");
       activeSwitch.style.left = "50%";
       formPatient.classList.add("slide-out-left");
-      registerImg.classList.add("slide-out-right");
       setTimeout(() => {
         registerImg.classList.add("display-none");
+        formMedical.classList.add("slide-in-right");
         formPatient.classList.add("display-none");
         formMedical.classList.remove("slide-out-right");
         formMedical.classList.remove("display-none");
-        formMedical.classList.add("slide-in-left");
-      }, 500);
+      }, 300);
     }
     switchBtnLeft.addEventListener(
       "click",

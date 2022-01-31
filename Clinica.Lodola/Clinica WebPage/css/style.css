@@ -434,11 +434,11 @@
 }
 @media only screen and (max-width: 400px) {
   .nav__logo {
-    font-size: 10vw;
+    font-size: 10vw !important;
   }
 
   .nav__footer {
-    font-size: 10vw;
+    font-size: 10vw !important;
   }
 }
 @media only screen and (max-width: 1208px) {
@@ -451,7 +451,7 @@
   }
 
   .register__img {
-    display: none;
+    display: none !important;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -464,12 +464,20 @@
     display: none;
   }
 
+  .login__img {
+    display: none !important;
+  }
+
   .nav__btns {
     display: none;
   }
 
   .hide-for-desktop {
     display: block;
+  }
+
+  .header {
+    position: initial !important;
   }
 }
 @media only screen and (max-width: 980px) {
@@ -497,10 +505,6 @@
   }
 }
 @media (max-width: 767px) {
-  .login__img {
-    display: none;
-  }
-
   .login-header {
     position: relative;
     background-color: #fff;
@@ -1239,7 +1243,7 @@ strong {
 
 .login-form {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .login__title {
