@@ -31,7 +31,7 @@
       display: none !important;
     }
     .nav__btns {
-      display: none;
+      display: none !important;
     }
     .hide-for-desktop {
       display: block;
@@ -50,7 +50,7 @@
       width: 100%;
     }
     .section__header-btns {
-      flex-wrap: wrap;
+      flex-wrap: wrap !important;
     }
     .section__header-btn {
       &:nth-child(1) {
