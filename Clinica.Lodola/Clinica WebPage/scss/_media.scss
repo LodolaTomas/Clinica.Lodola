@@ -85,7 +85,6 @@
     }
     .section__main-body {
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
-      -ms-grid-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
     }
   }
   @media (min-width: 768px) {
@@ -120,7 +119,6 @@
     }
     .section__main-body {
       grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)) !important;
-      -ms-grid-columns: repeat(auto-fill, minmax(225px, 1fr)) !important;
     }
   }
   @media (min-width: 1200px) {
@@ -161,6 +159,5 @@
     }
     .section__main-body {
       grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)) !important;
-      -ms-grid-columns: repeat(auto-fill, minmax(270px, 1fr)) !important;
     }
   }
