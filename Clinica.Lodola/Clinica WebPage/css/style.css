@@ -1406,7 +1406,7 @@ input:checked ~ .checkmark:after {
   background-size: cover;
   background-position: center;
   border-radius: 50px 0 0 50px;
-  background-image: url(../img/young-doctor.jpg);
+  background-image: url(../img/young-doctor.jpeg);
 }
 
 .icon-google {
