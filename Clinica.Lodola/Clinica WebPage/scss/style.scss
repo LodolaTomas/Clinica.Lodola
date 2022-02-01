@@ -125,6 +125,73 @@ a {
     color: #fff;
   }
 }
+
+/* UIL */
+.svg- {
+  &phone {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/phone.svg);
+  }
+  &envelope {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/envelope.svg);
+  }
+  &linkedin {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.5);
+    background-image: url(../img/linkedin-alt.svg);
+    margin-right: 5px;
+  }
+  &facebook {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.5);
+    background-image: url(../img/facebook-f.svg);
+    margin-right: 5px;
+  }
+  &twitter {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.5);
+    background-image: url(../img/twitter-alt.svg);
+    margin-right: 5px;
+  }
+  &instagram {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.5);
+    background-image: url(../img/instagram.svg);
+    margin-right: 5px;
+  }
+  &message{
+    display: inline-block;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    transform: scale(1.6) rotate(-45deg);
+    background-image: url(../img/message.svg);
+  }
+}
+
 .header {
   position: relative;
   height: 80px;
@@ -163,6 +230,8 @@ strong {
 }
 .nav__link {
   color: $title-color;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
 }
 .nav__list {
@@ -207,9 +276,7 @@ strong {
   font-weight: $font-medium;
   font-size: $h2-font-size;
 }
-.uil-phone {
-  margin-right: 5px;
-}
+
 .nav__burger {
   cursor: pointer;
   span {
@@ -434,13 +501,13 @@ strong {
   padding-bottom: 30px;
 }
 .footer__link {
+  display: flex;
+  align-items: center;
   color: $title-text;
 }
 .footer__social {
   color: $text-color;
-  .uil {
-    color: $title-color;
-  }
+  margin: 0 10px;
 }
 .footer__header {
   display: flex;
@@ -454,21 +521,11 @@ strong {
 .footer__header-information {
   a {
     margin: 10px 0;
-    display: block;
     font-size: $h3-font-size;
   }
 }
 .footer__header-social {
   margin: 20px 0;
-  a {
-    font-size: 2rem;
-    &:nth-child(2) {
-      margin: 0 10px;
-    }
-    &:nth-child(3) {
-      margin: 0 10px;
-    }
-  }
 }
 .footer__main {
   display: flex;
@@ -533,7 +590,7 @@ strong {
 }
 .footer__footer-btn {
   cursor: pointer;
-  padding-left: 5px;
+  padding: 0  10px;
   border-radius: 0 50px 50px 0;
   font-size: 2rem;
   margin: 0;
@@ -755,10 +812,10 @@ input {
   align-items: flex-end;
 }
 .login__arrows {
-  margin-right: 8px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 .arrow-circle-left {
-  margin-top: 10px;
   margin-right: 1.5rem;
   height: 2rem;
   cursor: pointer;
