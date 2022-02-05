@@ -1,163 +1,80 @@
-
 @media only screen and (max-width: 400px) {
-    .nav__logo {
-      font-size: 10vw !important;
-    }
-    .nav__footer {
-      font-size: 10vw !important;
+  .nav__logo {
+    font-size: 10vw !important;
+  }
+  .nav__footer {
+    font-size: 10vw !important;
+  }
+}
+@media (max-width: 767px) {
+  .section__home-aside {
+    display: none !important;
+  }
+  .login-header {
+    position: relative;
+    background-color: #fff;
+  }
+  .login {
+    flex-wrap: wrap;
+  }
+  .footer__header {
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .nav__logo {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 901px) {
+  .nav__menu,
+  .hide-for-mobile,
+  .login__img {
+    display: none !important;
+  }
+  .hide-for-desktop {
+    display: block;
+  }
+  .header {
+    position: initial !important;
+  }
+}
+@media only screen and (min-width: 899px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .section__home-container {
+    justify-content: center;
+  }
+  .section__home-main {
+    display: flex;
+    align-content: center;
+    width: 100%;
+  }
+  .section__home-btns {
+    flex-wrap: wrap !important;
+  }
+  .section__home-btn {
+    &:nth-child(1) {
+      margin-right: 5px;
     }
   }
-  @media only screen and (max-width: 1208px) {
-    .nav__menu-phone {
-      display: none;
-    }
-    .register__content {
-      margin: 0 !important;
-    }
-    .register__img {
-      display: none !important;
-    }
+}
+@media (min-width: 992px) {
+  .section__associated-body {
+    justify-content: start;
   }
-  @media only screen and (min-width: 900px) {
-    .hide-for-desktop {
-      display: none;
-    }
+}
+@media only screen and (max-width: 1208px) {
+  .nav__menu-phone {
+    display: none;
   }
-  @media only screen and (max-width: 900px) {
-    .nav__menu {
-      display: none;
-    }
-    .login__img {
-      display: none !important;
-    }
-    .nav__btns {
-      display: none !important;
-    }
-    .hide-for-desktop {
-      display: block;
-    }
-    .header{
-      position: initial !important;
-    }
+  .register__content {
+    margin: 0 !important;
   }
-  @media only screen and (max-width: 980px) {
-    .section__header-container {
-      justify-content: center;
-    }
-    .section__header-content {
-      display: flex;
-      align-content: center;
-      width: 100%;
-    }
-    .section__header-btns {
-      flex-wrap: wrap !important;
-    }
-    .section__header-btn {
-      &:nth-child(1) {
-        margin-right: 5px;
-      }
-    }
-  }
-  @media (max-width: 711px) {
-    .section__header-content-img {
-      display: none !important;
-    }
-  }
-  @media (max-width: 767px) {
-    
-    .login-header {
-      position: relative;
-      background-color: #fff;
-    }
-    .login {
-      flex-wrap: wrap;
-    }
-    .footer__header {
-      align-items: center;
-    }
-  }
-  @media (min-width: 576px) {
-    .container-sm {
-      max-width: 540px;
-    }
-    .container {
-      max-width: 540px;
-    }
-    .section__main-body {
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
-    }
-  }
-  @media (min-width: 768px) {
-    .container-md {
-      max-width: 720px;
-    }
-    .container-sm {
-      max-width: 720px;
-    }
-    .container {
-      max-width: 720px;
-    }
-    .nav__logo {
-      font-size: 2.5rem;
-    }
-  }
-  @media (min-width: 992px) {
-    .container-lg {
-      max-width: 960px;
-    }
-    .container-md {
-      max-width: 960px;
-    }
-    .container-sm {
-      max-width: 960px;
-    }
-    .container {
-      max-width: 960px;
-    }
-    .section__associated-body {
-      justify-content: start;
-    }
-    .section__main-body {
-      grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)) !important;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container-xl {
-      max-width: 1140px;
-    }
-    .container-lg {
-      max-width: 1140px;
-    }
-    .container-md {
-      max-width: 1140px;
-    }
-    .container-sm {
-      max-width: 1140px;
-    }
-    .container {
-      max-width: 1140px;
-    }
-  }
-  @media (min-width: 1400px) {
-    .container-xxl {
-      max-width: 1320px;
-    }
-    .container-xl {
-      max-width: 1320px;
-    }
-    .container-lg {
-      max-width: 1320px;
-    }
-    .container-md {
-      max-width: 1320px;
-    }
-    .container-sm {
-      max-width: 1320px;
-    }
-    .container {
-      max-width: 1320px;
-    }
-    .section__main-body {
-      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)) !important;
-    }
-  }
+  /* .register__img {
+    display: none !important;
+  } */
+}

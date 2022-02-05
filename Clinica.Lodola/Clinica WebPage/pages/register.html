@@ -25,9 +25,9 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-  <body>
+  <body class="container-xl">
     <header class="header login-header">
-      <nav class="nav container-lg flex flex-jc_sb flex-ai_c">
+      <nav class="nav flex flex-jc_sb flex-ai_c">
         <div class="nav__logo">
           <a href="../index.html" class="txt-uppercase">
             Medical <strong>Clinic</strong>
@@ -44,7 +44,7 @@
       <section class="register flex flex-jc_c flex-ai_c">
         <div class="register__content slide-in-left">
           <div class="switch-button">
-            <span class="active"></span>
+            <span class="active-swc"></span>
             <button class="switch-button-case left active-case">Patient</button>
             <button class="switch-button-case right">Medical</button>
           </div>
@@ -478,7 +478,7 @@
     const switchButton = document.querySelector(".switch-button");
     const switchBtnRight = document.querySelector(".switch-button-case.right");
     const switchBtnLeft = document.querySelector(".switch-button-case.left");
-    const activeSwitch = document.querySelector(".active");
+    const activeSwitch = document.querySelector(".active-swc");
     const formPatient = document.getElementById("register-patient");
     const formMedical = document.getElementById("register-medical");
     const registerImg = document.getElementById("register-img");
