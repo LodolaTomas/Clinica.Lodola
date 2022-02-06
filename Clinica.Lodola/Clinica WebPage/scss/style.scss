@@ -138,16 +138,14 @@ $icons: (
   instagram: url(../img/instagram.svg),
   message: url(../img/message.svg),
 );
-.svg-config {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 20px;
-  height: 20px;
-}
+
 @each $key, $value in $icons {
   .svg-#{$key} {
-    @extend .svg-config;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
     background-image: $value;
   }
 }
