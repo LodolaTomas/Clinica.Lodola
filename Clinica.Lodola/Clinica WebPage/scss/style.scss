@@ -7,6 +7,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  ul,
+  li {
+    padding: 0;
+  }
   &::before {
     margin: 0;
     padding: 0;
@@ -129,6 +133,7 @@ p {
     color: #fff;
   }
 }
+
 $icons: (
   phone: url(../img/phone.svg),
   envelope: url(../img/envelope.svg),
@@ -138,6 +143,7 @@ $icons: (
   instagram: url(../img/instagram.svg),
   message: url(../img/message.svg),
 );
+
 .svg-config {
   display: inline-block;
   background-repeat: no-repeat;
@@ -145,6 +151,7 @@ $icons: (
   width: 20px;
   height: 20px;
 }
+
 @each $key, $value in $icons {
   .svg-#{$key} {
     @extend .svg-config;
@@ -169,7 +176,7 @@ $icons: (
   &__menu {
     &-item {
       margin: 0 15px;
-      font-weight: $font-medium;
+      font-weight: $font-regular;
       font-size: $h2-font-size;
       &_link {
         color: $title-color;
@@ -200,7 +207,7 @@ $icons: (
     left: 0;
     padding: 0 15px;
     transform: translateX(-100%);
-    font-weight: $font-medium;
+    font-weight: $font-regular;
     font-size: $h2-font-size;
     &_link {
       color: $title-color;
@@ -214,7 +221,7 @@ $icons: (
   }
   &__btn {
     margin: 0 15px;
-    font-weight: $font-medium;
+    font-weight: $font-regular;
     font-size: $h2-font-size;
     text-transform: capitalize;
     padding: 4px 20px;
@@ -253,8 +260,13 @@ $icons: (
     display: flex;
     align-content: center;
     &-title {
+      &-content {
+        display: flex;
+        flex-direction: column;
+      }
+      max-width: 300px;
       font-size: 2.5rem;
-      font-weight: $font-medium;
+      font-weight: $font-regular;
       color: #fff;
     }
     &-text {
@@ -264,7 +276,7 @@ $icons: (
   }
   &-btns {
     margin: 25px 0;
-    font-weight: $font-medium;
+    font-weight: $font-regular;
     font-size: $h2-font-size;
     display: flex;
     flex-direction: row;
@@ -417,7 +429,7 @@ $icons: (
     margin: auto;
     font-size: 2rem;
     color: #fff;
-    font-weight: $font-medium;
+    font-weight: $font-regular;
   }
 }
 .section__main-footer-btn {
@@ -432,16 +444,181 @@ $icons: (
     padding: 25px 44px;
     color: $first-color;
     background-color: #fff;
-    font-weight: $font-medium;
+    font-weight: $font-regular;
   }
 }
+.section__news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  .section__news-header {
+    margin-bottom: 20px;
+    .section__news-title {
+      strong {
+        color: $first-color;
+      }
+    }
+  }
+  .section__news-body {
+    .news__main {
+      max-width: 500px;
+      .section__news-card {
+        .section__news-card-img {
+          .card-img {
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+        .section__news-card-content {
+          padding: 0 10px;
+          .card-userpost {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .userpost-data {
+              display: flex;
+              align-items: center;
+              .user-post {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+              .user-post-name {
+                margin-left: 10px;
+                font-size: $small--font-size;
+                color: #424242;
+                font-weight: $font-medium;
+              }
+            }
+            .userpost-time {
+              margin: 10px;
+              font-size: $small--font-size;
+              font-weight: $font-bold;
+              a {
+                display: flex;
+                align-items: center;
+                img {
+                  width: 18px;
+                }
+              }
+            }
+          }
+          .card-content {
+            margin: 10px 0;
+            .card-title {
+              max-width: 350px;
+              font-size: $h1-font-size;
+              font-weight: $font-bold;
+            }
+            .card-text {
+              margin-top: 10px;
+              font-size: $normal-font-size;
+            }
+          }
+        }
+      }
+    }
+    .news__card {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 10px;
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+          font-size: $h3-font-size;
+          font-weight: $font-medium;
+          border-bottom: 1px solid $first-color;
+        }
+        a {
+          color: $second-color;
+          img {
+            width: 15px;
+          }
+        }
+      }
+      .section__news-card {
+        display: flex;
+        .section__news-card-img {
+          padding-right: 20px;
+          img {
+            width: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
+        .section__news-card-content {
+          position: relative;
+          margin-bottom: 1.5rem;
+          .section__news-card-title {
+            font-size: $normal-font-size;
+            font-weight: $font-medium;
+          }
+          .section__news-card-text {
+            font-size: $small--font-size;
+            margin-top: 10px;
+          }
+          .section__news-card-btn {
+            bottom: 0;
+            a {
+              font-size: 0.8rem;
+              color: $second-color;
+              img {
+                width: 0.9rem;
+                margin-left: 0.3rem;
+              }
+            }
+          }
+        }
+      }
+      .section__comingsoon {
+        margin-top: 50px;
+        h2 {
+          font-size: $h3-font-size;
+          display: inline-block;
+          border-bottom: 1px solid $first-color;
+        }
+        .comingsoon-imgs {
+          img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            object-position: right;
+          }
+        }
+      }
+    }
+  }
+  .section-mobile{
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $second-color;
+    a {
+      color: $second-color;
+      margin-right: 10px;
+    }
+    img {
+      width: 15px;
+    }
+  }
+}
+
 .footer {
   margin: auto;
   position: relative;
   width: 100%;
   height: 100%;
 }
-.footer-img {
+.footer-background {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -465,10 +642,6 @@ $icons: (
   align-items: center;
   color: $title-text;
 }
-.footer__social {
-  color: $text-color;
-  margin: 0 10px;
-}
 .footer__header {
   display: flex;
   flex-grow: 1;
@@ -485,7 +658,14 @@ $icons: (
   }
 }
 .footer__header-social {
-  margin: 20px 0;
+  margin: 15px 0;
+  .footer__social{
+    padding-right: 20px;
+    p {
+      width: 25px;
+      height: 25px;
+    }
+  }
 }
 .footer__main {
   display: flex;
@@ -732,7 +912,7 @@ input {
   padding-right: 25px;
   padding-bottom: 30px;
   font-size: $h2-font-size;
-  font-weight: $font-medium;
+  font-weight: $font-regular;
   color: #fff;
 }
 .login__card-content {
@@ -753,7 +933,7 @@ input {
   }
   h3 {
     font-size: $h3-font-size;
-    font-weight: $font-medium;
+    font-weight: $font-regular;
     color: #fff;
   }
   p {
@@ -858,7 +1038,7 @@ input {
   }
   p {
     font-size: $h2-font-size;
-    font-weight: $font-medium;
+    font-weight: $font-regular;
     color: $text-color;
   }
 }
