@@ -648,6 +648,7 @@ $icons: (
   flex-direction: column;
 }
 .footer__header-text {
+  max-width: 250px;
   margin: 20px 0;
   font-size: $h3-font-size;
 }
@@ -1016,12 +1017,14 @@ input {
   font-weight: $font-bold;
   padding-bottom: 1px;
   &:hover {
-    color: grey;
     cursor: pointer;
   }
   &:focus {
     outline: none;
   }
+}
+.switch-button-case:active, .switch-button-case:focus {
+  color: #fff;
 }
 .right {
   color: #000;

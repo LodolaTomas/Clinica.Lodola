@@ -10,37 +10,39 @@
     <title>Medical Clinic - Services</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav container-lg flex flex-jc_sb flex-ai_c">
-        <div class="nav__logo">
-          <a href="../index.html" class="txt-uppercase">
-            Medical <strong>Clinic</strong>
-          </a>
-        </div>
+    <header class="header container-xl">
+      <nav class="nav flex flex-jc_sb flex-ai_c">
+        <a href="../index.html" class="nav__logo txt-uppercase">
+          Medical <strong>Clinic</strong>
+        </a>
         <div class="nav__menu">
-          <ul class="nav__list flex flex-jc_c">
-            <li class="nav__item">
-              <a href="../index.html" class="nav__link">Home</a>
+          <ul class="flex flex-jc_c">
+            <li class="nav__menu-item">
+              <a href="../index.html" class="nav__menu-item_link">Home</a>
             </li>
-            <li class="nav__item">
-              <a href="services.html" class="nav__link active">Services</a>
+            <li class="nav__menu-item">
+              <a href="./services.html" class="nav__menu-item_link active"
+                >Services</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="contact.html" class="nav__link">Contact</a>
+            <li class="nav__menu-item">
+              <a href="./contact.html" class="nav__menu-item_link"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
-        <div class="nav__menu-content flex">
+        <div class="hide-for-mobile relative flex flex-ai_c">
           <div class="nav__menu-phone">
-            <a href="" class="nav__link">
+            <a href="tel:000000" class="nav__menu-phone_link">
               <p class="svg-phone"></p>
               <p>+54 000-000</p>
             </a>
           </div>
-          <div class="nav__btns">
-            <a href="login.html" class="nav__btn btn--primary">log in</a>
-            <a href="register.html" class="nav__btn btn--secondary">sign up</a>
-          </div>
+          <a href="pages/login.html" class="nav__btn btn--primary">log in</a>
+          <a href="pages/register.html" class="nav__btn btn--secondary"
+            >sign up</a
+          >
         </div>
         <div class="nav__burger hide-for-desktop">
           <span></span>

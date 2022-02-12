@@ -395,6 +395,10 @@
     display: none !important;
   }
 
+  .section__home-main {
+    padding: 20px 10px !important;
+  }
+
   .login-header {
     position: relative;
     background-color: #fff;
@@ -1174,6 +1178,7 @@ p {
 }
 
 .footer__header-text {
+  max-width: 250px;
   margin: 20px 0;
   font-size: 1.125rem;
 }
@@ -1578,11 +1583,14 @@ input:checked ~ .checkmark:after {
   padding-bottom: 1px;
 }
 .switch-button-case:hover {
-  color: grey;
   cursor: pointer;
 }
 .switch-button-case:focus {
   outline: none;
+}
+
+.switch-button-case:active, .switch-button-case:focus {
+  color: #fff;
 }
 
 .right {
