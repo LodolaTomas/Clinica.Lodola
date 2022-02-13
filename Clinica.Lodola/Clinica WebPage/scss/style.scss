@@ -242,7 +242,6 @@ $icons: (
     }
   }
 }
-
 .home {
   background-color: $first-color;
   border-radius: 0 0 50px 50px;
@@ -339,10 +338,9 @@ $icons: (
     }
   }
 }
-
-.main{
+.main {
   margin-top: 25px;
-  &-header{
+  &-header {
     flex-wrap: wrap;
     &-title {
       margin-right: 40px;
@@ -367,7 +365,7 @@ $icons: (
     -ms-grid-rows: 22rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
     -ms-grid-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
-    .main-card{
+    .main-card {
       &-img {
         margin: auto;
       }
@@ -381,7 +379,6 @@ $icons: (
       }
       &-text {
         font-size: $normal-font-size;
-        margin: 8px;
       }
     }
   }
@@ -451,7 +448,6 @@ $icons: (
     }
   }
 }
-
 .news {
   display: flex;
   flex-direction: column;
@@ -529,6 +525,7 @@ $icons: (
       }
     }
     .news__cards {
+      margin: 0;
       max-width: 500px;
       display: flex;
       flex-direction: column;
@@ -551,6 +548,7 @@ $icons: (
       }
       .news-card {
         display: flex;
+        margin-bottom: 10px;
         &-img {
           padding-right: 20px;
           img {
@@ -585,7 +583,7 @@ $icons: (
         }
       }
       &-comingsoon {
-        margin-top: 50px;
+        margin-top: 10px;
         h2 {
           font-size: $h3-font-size;
           display: inline-block;
@@ -616,7 +614,6 @@ $icons: (
     }
   }
 }
-
 .footer {
   margin: auto;
   position: relative;
@@ -644,7 +641,7 @@ $icons: (
       display: flex;
       flex-grow: 1;
       flex-direction: column;
-      .footer__logo{
+      .footer__logo {
         @extend .nav__logo;
       }
       &-text {
@@ -757,12 +754,11 @@ $icons: (
       }
     }
   }
-  .rightsReserved{
+  .rightsReserved {
     padding-bottom: 35px;
+    text-align: center;
   }
 }
-
-
 .login-header {
   position: absolute;
   background-color: rgba(255, 222, 173, 0);
@@ -1130,4 +1126,85 @@ input {
   border-radius: 50px;
   resize: none;
   padding: 8px 15px;
+}
+.contact {
+  &__nav {
+    position: absolute !important;
+    z-index: 10;
+    width: 100vw;
+    background-color: #ffffff;
+  }
+  &__main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/contact-img.png);
+  }
+  &__card {
+    position: absolute;
+    width: 370px;
+    height: 500px;
+    background-color: $first-color;
+    color: #fff;
+    padding: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    &-title {
+      font-size: $h3-font-size;
+      font-weight: $font-bold;
+      margin-bottom: 40px;
+      h2 {
+        color: #fff;
+      }
+    }
+  }
+  &__city,
+  &__adress,
+  &__phone,
+  &__email,
+  &__social {
+    height: 57px;
+    span {
+      font-size: $h3-font-size;
+      font-weight: $font-medium;
+      color: #bdc3ce;
+      display: block;
+    }
+    p {
+      display: flex;
+      font-size: $h2-font-size;
+      font-weight: $font-regular;
+      color: #fff;
+    }
+    a {
+      display: inline-block;
+      font-size: $h2-font-size;
+      font-weight: $font-regular;
+      cursor: pointer;
+      color: #fff;
+      margin-right: 10px;
+      &:after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        display: block;
+        margin: auto;
+        transition: width 0.3s ease-in-out;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
