@@ -170,6 +170,12 @@ $icons: (
     color: $first-color;
   }
 }
+/* .header{
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 999;
+} */
 .nav {
   height: 80px;
   &__menu {
