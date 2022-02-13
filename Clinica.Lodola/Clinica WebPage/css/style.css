@@ -376,6 +376,32 @@
     opacity: 0;
   }
 }
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+
 @media only screen and (max-width: 400px) {
   .nav__logo, .footer__container .footer__header .footer__logo {
     font-size: 10vw !important;
@@ -388,6 +414,16 @@
 @media (max-width: 764px) {
   .news__cards {
     display: none !important;
+  }
+
+  .contact__main {
+    height: 125vh !important;
+  }
+
+  .contact__card {
+    transform: translateX(0) !important;
+    margin-top: 120px !important;
+    padding: 35px !important;
   }
 }
 @media (max-width: 767px) {
@@ -490,6 +526,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
 }
 * ul,
 * li {
@@ -1681,16 +1718,17 @@ input:checked ~ .checkmark:after {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
   background-image: url(../img/contact-img.png);
+  transition: all 0.3s ease-in-out;
 }
 .contact__card {
   position: absolute;
-  width: 370px;
+  max-width: 370px;
   height: 500px;
-  background-color: #2c70dd;
+  background-color: #21c0b0;
   color: #fff;
   padding: 50px;
   top: 0;
@@ -1700,6 +1738,7 @@ input:checked ~ .checkmark:after {
   margin: auto;
   transform: translateX(-50%);
   border-radius: 30px;
+  transition: all 0.3s ease-in-out;
 }
 .contact__card-title {
   font-size: 1.125rem;
@@ -1720,6 +1759,7 @@ input:checked ~ .checkmark:after {
 }
 .contact__city p, .contact__adress p, .contact__phone p, .contact__email p, .contact__social p {
   display: flex;
+  flex-wrap: wrap;
   font-size: 1.25rem;
   font-weight: 400;
   color: #fff;
