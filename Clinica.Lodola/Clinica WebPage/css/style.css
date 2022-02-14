@@ -1179,7 +1179,7 @@ p {
   background-size: cover;
   background-position: left;
   transform: scale(-1);
-  background-image: url(../img/img-footer-background.jpg);
+  background-image: url(../img/img-footer-background.webp);
 }
 .footer__container {
   display: flex;
