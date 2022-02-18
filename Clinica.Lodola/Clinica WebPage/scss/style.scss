@@ -755,7 +755,7 @@ $icons: (
       border: none;
       background-color: $first-color;
       overflow: hidden;
-      p {
+      .svg-message {
         margin: 7px 0;
         transform: rotate(-45deg);
       }
