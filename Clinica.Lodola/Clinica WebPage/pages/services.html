@@ -1,61 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../img/icon.ico">
-    <!-- Unicons by <a href="https://iconscout.com/">Iconscout</a> -->
-    <!-- BOOTSTRAP 5.1.3 -->
-    <link
-      href="../assets/bootstrap/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Medical Clinic - Services</title>
-  </head>
-  <body class="animated fadeIn">
-    <header class="header container-xl">
-      <nav class="nav flex flex-jc_sb flex-ai_c">
-        <a href="../index.html" class="nav__logo txt-uppercase">
-          Medical <strong>Clinic</strong>
-        </a>
-        <div class="nav__menu">
-          <ul class="flex flex-jc_c">
-            <li class="nav__menu-item">
-              <a href="../index.html" class="nav__menu-item_link">Home</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../img/icon.ico" />
+  <!-- Unicons by <a href="https://iconscout.com/">Iconscout</a> -->
+  <!-- BOOTSTRAP 5.1.3 -->
+  <link href="../assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Medical Clinic - Services</title>
+</head>
+
+<body class="animated fadeIn">
+  <header class="header container-xl">
+    <nav class="nav flex flex-jc_sb flex-ai_c">
+      <a href="../index.html" class="nav__logo txt-uppercase">
+        Medical <strong>Clinic</strong>
+      </a>
+      <div class="nav__menu">
+        <ul class="flex flex-jc_c">
+          <li class="nav__menu-item">
+            <a href="../index.html" class="nav__menu-item_link">Home</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="./services.html" class="nav__menu-item_link active">Services</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="./contact.html" class="nav__menu-item_link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hide-for-mobile relative flex flex-ai_c">
+        <div class="nav__menu-phone">
+          <a href="tel:000000" class="nav__menu-phone_link">
+            <p class="svg-phone"></p>
+            <p>+54 000-000</p>
+          </a>
+        </div>
+        <a href="./login.html" class="nav__btn btn--primary">log in</a>
+        <a href="./register.html" class="nav__btn btn--secondary">sign up</a>
+      </div>
+      <div class="nav__burger hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  <!-- SERVICES HOME -->
+  <section class="container-xl service__home">
+    <div class="container-home">
+      <h1 class="home-title">Service Details</h1>
+      <p class="home-text">Home > Service Details</p>
+    </div>
+  </section>
+  <!-- SERVICES DETAILS -->
+  <div class="container-xl">
+    <div class="service__details row">
+      <aside class="col-lg-4 col-md-5 col-12">
+        <section class="service__search">
+          <h3>Search Here</h3>
+          <form action="">
+            <input type="text" placeholder="Search" />
+            <button type="submit">
+              <i class="svg-search"></i>
+            </button>
+          </form>
+        </section>
+        <section class="service__category">
+          <h3>Service Category</h3>
+          <ul>
+            <li>
+              <a href="javascript:void(0)">
+                All Services <img src="../img/row-right.svg" alt="flecha">
+              </a>
             </li>
-            <li class="nav__menu-item">
-              <a href="./services.html" class="nav__menu-item_link active"
-                >Services</a
-              >
+            <li>
+              <a href="javascript:void(0)">
+                Cardiyiology <img src="../img/row-right.svg" alt="flecha">
+              </a>
             </li>
-            <li class="nav__menu-item">
-              <a href="./contact.html" class="nav__menu-item_link"
-                >Contact</a
-              >
+            <li>
+              <a href="javascript:void(0)">
+                Urology <img src="../img/row-right.svg" alt="flecha">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                Neurology <img src="../img/row-right.svg" alt="flecha">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                Gastrology <img src="../img/row-right.svg" alt="flecha">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                Dentist <img src="../img/row-right.svg" alt="flecha">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                Orthopedic <img src="../img/row-right.svg" alt="flecha">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="service__contact">
+          <h3>Deparment Address</h3>
+          <ul>
+            <li>
+              <i class="svg-location"></i>
+              <p>10 New Team Street, v2 SNW, Newstate, Usa</p>
+            </li>
+            <li>
+              <i class="svg-phone"></i>
+              <p>Coll Us Now!<a href="tel:+54 000 000">Tel:+54 000 000</a></p>
+            </li>
+            <li>
+              <i class="svg-envelope"></i>
+              <p>Do you have a Question?<a href="contact@medicalclinic.com">contact@medicalclinic.com</a></p>
+            </li>
+        </section>
+      </aside>
+      <main class="col-lg-8 col-md-7 col-12">
+        <section class="service__neurology">
+          <img src="../img/service-main.jpg" alt="">
+          <h2>Introduction to Neurology</h2>
+          <p>
+            Languages realizes why a new common language would be desirable: one could refuse to pay expensive
+            translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+            words.
+          </p>
+          <p>
+            Languages realizes why a new common language would be desirable: one could refuse to pay expensive
+            translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+            words. If several languages coalesce, the grammar of the resulting. would be desirable.
+          </p>
+          <h3>
+            Why Choose This Service
+          </h3>
+          <p>
+            Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium dolore Totam rem aperiam with a
+            long list of products and never ending customer support.
+          </p>
+          <ul>
+            <li>
+              <i class="svg-check"></i>
+              <p>Cerebrovascular disease, such as stroke</p>
+            </li>
+            <li>
+              <i class="svg-check"></i>
+              <p>Demyelinating diseases of the central nervous system, such as multiple sclerosis</p>
+            </li>
+            <li>
+              <i class="svg-check"></i>
+              <p>Headache disorders</p>
+            </li>
+            <li>
+              <i class="svg-check"></i>
+              <p>Infections of the brain and peripheral nervous system</p>
+            </li>
+            <li>
+              <i class="svg-check"></i>
+              <p>Movement disorders, such as Parkinson's disease</p>
+            </li>
+          </ul>
+          <blockquote>
+            <div class="icon">
+              <i class="lni lni-quotation"></i>
+            </div>
+            <h4>"Perspiciatis undeomnis iste natus error sit voluptatem accusantium dolore Totam rem
+              aperiam with a long list of products and never ending customer support."</h4>
+            <span>- Dr.Alice Williams</span>
+          </blockquote>
+          <h4>Education to Become a Neurologist in the United States</h4>
+          <p>Many neurologists also have additional training or interest in one area of neurology, such as stroke,
+            epilepsy, neuromuscular, sleep medicine, pain management, or movement disorders.</p>
+        </section>
+      </main>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-background"></div>
+    <div class="footer__container container-xl">
+      <div class="footer__header">
+        <div class="footer__logo">
+          <a href="index.html" class="txt-uppercase">
+            Medical <strong>Clinic</strong>
+          </a>
+        </div>
+        <div class="footer__header-text">
+          <p>10 New Team Street, v2 SNW, Newstate, Usa</p>
+        </div>
+        <div class="footer__header-information">
+          <a class="footer__link" href="tel:+54-000-000">
+            <p class="svg-phone"></p>
+            <p>+54-000-000</p>
+          </a>
+          <a class="footer__link" href="mailto:contact@medicalclinic.com">
+            <p class="svg-envelope"></p>
+            <p>contact@medicalclinic.com</p>
+          </a>
+        </div>
+        <div class="footer__header-social">
+          <a title="linkedin" target="_blank" href="https://www.linkedin.com/" class="footer__social"
+            rel="noopener noreferrer">
+            <p class="svg-linkedin"></p>
+          </a>
+          <a title="facebook" target="_blank" href="https://www.facebook.com/" class="footer__social"
+            rel="noopener noreferrer">
+            <p class="svg-facebook"></p>
+          </a>
+          <a title="twitter" target="_blank" href="https://twitter.com/" class="footer__social"
+            rel="noopener noreferrer">
+            <p class="svg-twitter"></p>
+          </a>
+          <a title="instagram" target="_blank" href="https://www.instagram.com/" class="footer__social"
+            rel="noopener noreferrer">
+            <p class="svg-instagram"></p>
+          </a>
+        </div>
+      </div>
+      <div class="footer__main">
+        <div class="footer__main-links">
+          <h2 class="footer__main-title footer__main-title">Menu</h2>
+          <ul class="footer__main-list">
+            <li class="footer__main-item">
+              <a href="#" class="footer__link">Work</a>
+            </li>
+            <li class="footer__main-item">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__main-item">
+              <a href="#" class="footer__link">Services</a>
+            </li>
+            <li class="footer__main-item">
+              <a href="#" class="footer__link">News</a>
             </li>
           </ul>
         </div>
-        <div class="hide-for-mobile relative flex flex-ai_c">
-          <div class="nav__menu-phone">
-            <a href="tel:000000" class="nav__menu-phone_link">
-              <p class="svg-phone"></p>
-              <p>+54 000-000</p>
-            </a>
-          </div>
-          <a href="./login.html" class="nav__btn btn--primary">log in</a>
-          <a href="./register.html" class="nav__btn btn--secondary"
-            >sign up</a
-          >
+        <div class="footer__main-links">
+          <h2 class="footer-title footer__main-title">Uselful Link</h2>
+          <ul class="footer__main-list">
+            <li class="footer__main-item">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="footer__main-item">
+              <a href="#" class="footer__link">Cookie Policy</a>
+            </li>
+            <li class="footer__main-item">
+              <a href="#" class="footer__link">Purchasing Policy</a>
+            </li>
+            <li class="footer__main-item">
+              <a href="#" class="footer__link">Terms & Conditions</a>
+            </li>
+            <li class="footer__main-item">
+              <a href="#" class="footer__link">Carrer</a>
+            </li>
+          </ul>
         </div>
-        <div class="nav__burger hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
-  </body>
+      </div>
+      <div class="footer__footer">
+        <h3 class="footer__footer-title">Contact</h3>
+        <p class="footer__footer-text">
+          The public health system, free and of quality, is offered to all
+          citizens who live and transit the City of Buenos Aires.
+        </p>
+        <form method="GET">
+          <input type="email" placeholder="Enter your email" class="footer__footer-input" />
+          <button title="sendEmail" class="footer__footer-btn" type="button">
+            <i class="svg-message"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="rightsReserved container-xl">
+      <p>© CopyRight 2022 Medical Clinic All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>

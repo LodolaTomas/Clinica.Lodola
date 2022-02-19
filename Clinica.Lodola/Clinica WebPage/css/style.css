@@ -423,7 +423,6 @@
   .contact__card {
     transform: translateX(0) !important;
     margin-top: 120px !important;
-    padding: 35px !important;
   }
 }
 @media (max-width: 767px) {
@@ -678,7 +677,7 @@ p {
   color: #fff;
 }
 
-.svg-config, .svg-message, .svg-instagram, .svg-twitter, .svg-facebook, .svg-linkedin, .svg-envelope, .svg-phone {
+.svg-config, .svg-check, .svg-location, .svg-search, .svg-message, .svg-instagram, .svg-twitter, .svg-facebook, .svg-linkedin, .svg-envelope, .svg-phone {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: cover;
@@ -712,6 +711,18 @@ p {
 
 .svg-message {
   background-image: url(../img/message.svg);
+}
+
+.svg-search {
+  background-image: url(../img/search.svg);
+}
+
+.svg-location {
+  background-image: url(../img/location-pin-alt.svg);
+}
+
+.svg-check {
+  background-image: url(../img/check-square.svg);
 }
 
 .nav__logo, .footer__container .footer__header .footer__logo {
@@ -803,7 +814,7 @@ p {
 }
 
 .home {
-  background-color: #2c70dd;
+  background-color: #4377cb;
   border-radius: 0 0 50px 50px;
   margin: auto;
   max-height: 100%;
@@ -1721,16 +1732,13 @@ input:checked ~ .checkmark:after {
   background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/contact-img.png);
-  transition: all 0.3s ease-in-out;
+  background-image: url(../img/contact-img.webp);
 }
 .contact__card {
   position: absolute;
   max-width: 370px;
-  height: 500px;
-  background-color: #21c0b0;
-  color: #fff;
-  padding: 50px;
+  max-height: 470px;
+  background-color: #4377cb;
   top: 0;
   left: 0;
   right: 0;
@@ -1738,17 +1746,22 @@ input:checked ~ .checkmark:after {
   margin: auto;
   transform: translateX(-50%);
   border-radius: 25px;
-  box-shadow: 8px 8px 8px 8px rgba(31, 135, 121, 0.5);
-  border: 1px solid white;
   transition: all 0.3s ease-in-out;
 }
 .contact__card-title {
+  position: relative;
+  background-color: #fff;
+  border-radius: 25px 25px 0 0;
   font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  padding: 30px 50px;
 }
 .contact__card-title h2 {
-  color: #fff;
+  color: #4377cb;
+}
+.contact__card-content {
+  position: relative;
+  padding: 0 50px;
 }
 .contact__city, .contact__adress, .contact__phone, .contact__email, .contact__social {
   height: 57px;
@@ -1757,7 +1770,7 @@ input:checked ~ .checkmark:after {
   margin-top: 10px;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #bdc3ce;
+  color: #ffffffa8;
   display: block;
 }
 .contact__city p, .contact__adress p, .contact__phone p, .contact__email p, .contact__social p {
@@ -1765,24 +1778,239 @@ input:checked ~ .checkmark:after {
   flex-wrap: wrap;
   font-size: 1.25rem;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
 }
 .contact__city a, .contact__adress a, .contact__phone a, .contact__email a, .contact__social a {
   display: inline-block;
   font-size: 1.25rem;
   font-weight: 400;
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
   margin-right: 10px;
 }
 .contact__city a:after, .contact__adress a:after, .contact__phone a:after, .contact__email a:after, .contact__social a:after {
   content: "";
-  width: 100%;
+  width: 0%;
   height: 2px;
-  background-color: #fff;
+  background-color: #ffffff;
   display: block;
   margin: auto;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+.contact__city a:hover:after, .contact__adress a:hover:after, .contact__phone a:hover:after, .contact__email a:hover:after, .contact__social a:hover:after {
+  width: 100%;
+}
+
+.service__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/service-home.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 0 0 50px 50px;
+  position: relative;
+}
+.service__home::before {
+  background-color: #4377cb;
+  opacity: 0.8;
+  border-radius: 0 0 50px 50px;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 400px;
+  content: "";
+}
+.service__home .container-home .home-title,
+.service__home .container-home .home-text {
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+.service__home .container-home .home-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.service__home .container-home .home-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.service__details {
+  margin: 50px 0;
+}
+.service__search {
+  padding: 25px 20px;
+  box-shadow: 0 1px 30px 0 rgba(32, 32, 32, 0.11);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.service__search h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.service__search form {
+  position: relative;
+}
+.service__search form input {
+  width: 100%;
+  background-color: transparent;
+  height: 55px;
+  border: none;
+  padding: 0 70px 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.service__search form button {
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  width: 40px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: #fff !important;
+  font-size: 13px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 !important;
+  border: none;
+  margin-top: -19px;
+  background: #21c0b0;
+}
+.service__category {
+  padding: 25px 20px;
+  box-shadow: 0 1px 30px 0 rgba(32, 32, 32, 0.11);
+  border-radius: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.service__category h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.service__category li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 12px 0;
+  color: #081828;
+  font-weight: 400;
+  border-radius: 0;
+  position: relative;
+  padding-right: 40px;
+  font-size: 1.125rem;
+  border-bottom: 1px solid #eee;
+}
+.service__category li a img {
+  transition: all 0.3s ease-in-out;
+}
+.service__category li a:hover img {
+  transform: translateX(10px);
+}
+.service__category li:last-child a {
+  border-bottom: 1px solid #fff;
+}
+.service__contact {
+  padding: 25px 20px;
+  box-shadow: 0 1px 30px 0 rgba(32, 32, 32, 0.11);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.service__contact h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.service__contact li {
+  font-size: 1.125rem;
+  position: relative;
+  display: flex;
+  margin-bottom: 25px;
+  align-items: center;
+}
+.service__contact li i {
+  width: 34px;
+  height: 30px;
+  filter: invert(75%) sepia(40%) saturate(6588%) hue-rotate(131deg) brightness(103%) contrast(74%);
+}
+.service__contact li p {
+  padding-left: 30px;
+}
+.service__contact li p,
+.service__contact li a {
+  color: #000000ab;
+}
+.service__neurology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.service__neurology img {
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.service__neurology h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+.service__neurology p {
+  font-size: 1.125rem;
+  display: block;
+  margin: 20px 0;
+  line-height: 24px;
+  color: #000000ab;
+}
+.service__neurology ul {
+  margin: 25px 0 !important;
+}
+.service__neurology ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+  line-height: 24px;
+  color: #000000ab;
+}
+.service__neurology ul li i {
+  width: 16px;
+  height: 16px;
+  filter: invert(34%) sepia(94%) saturate(1827%) hue-rotate(205deg) brightness(90%) contrast(91%);
+}
+.service__neurology ul li p {
+  margin: 0;
+  padding-left: 30px;
+}
+.service__neurology blockquote {
+  background-color: #4377cb;
+  position: relative;
+  color: #fff;
+  font-weight: 400;
+  clear: both;
+  z-index: 1;
+  margin: 40px 0;
+  text-align: left;
+  padding: 40px;
+  border-radius: 5px;
+}
+.service__neurology blockquote h4 {
+  color: #fff;
+  font-weight: 700;
+}
+.service__neurology blockquote span {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
