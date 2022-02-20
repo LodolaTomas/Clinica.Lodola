@@ -475,6 +475,8 @@ $icons: (
     }
   }
   &-main {
+    width: 100%;
+    justify-content: space-evenly;
     .news {
       &-card {
         max-width: 500px;
@@ -557,10 +559,6 @@ $icons: (
             width: 15px;
           }
         }
-      }
-      .news-main{
-        width: 100%;
-        justify-content: space-evenly;
       }
       .news-card {
         display: flex;
