@@ -19,9 +19,6 @@
   }
 }
 @media (max-width: 767px) {
-  .home-aside {
-    display: none !important;
-  }
   .home-main{
     padding: 20px 10px !important;
   }
@@ -55,10 +52,13 @@
   }
   
 }
-@media only screen and (max-width: 901px) {
+@media only screen and (max-width: 935px) {
   .nav__menu,
   .hide-for-mobile,
   .login__img {
+    display: none !important;
+  }
+  .home-aside {
     display: none !important;
   }
   .hide-for-desktop {
@@ -68,9 +68,9 @@
     position: initial !important;
   }
 }
-@media only screen and (min-width: 899px) {
+@media only screen and (min-width: 936px) {
   .hide-for-desktop {
-    display: none;
+    display: none !important;
   }
 }
 @media only screen and (max-width: 980px) {
