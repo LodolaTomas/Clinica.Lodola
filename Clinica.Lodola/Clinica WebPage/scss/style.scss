@@ -173,21 +173,17 @@ $icons: (
     color: $first-color;
   }
 }
-/* .header{
+.header{
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   background-color: #ffffff;
   z-index: 999;
-} */
+  border-bottom: 1px solid #808080;
+}
 .nav {
   height: 80px;
   z-index: 999;
-  &:after {
-    content: "";
-    width: 100%;
-    background-color: #fff;
-    z-index: 999;
-  }
   &__menu {
     &-item {
       margin: 0 15px;
