@@ -1,12 +1,12 @@
 "use strict";
 
-const header__menu = document.querySelector('.header__menu');
 const nav__burger = document.querySelector('.nav__burger');
+const fadeElements = document.querySelectorAll('.has-fade');
 nav__burger.onclick = function () {
     this.classList.toggle('bactive');
     if(this.classList.contains('bactive')){
-        header__menu.style.transform = 'translateY(0)';
+        fadeElements.forEach((el) =>el.style.visibility = 'visible');
     }else{
-        header__menu.style.transform = 'translateY(calc(-100% - 160px))';
+        fadeElements.forEach((el) =>el.style.visibility = 'hidden');
     }
 }

@@ -22,7 +22,8 @@
   </head>
   <body class="animated fadeIn">
     <!-- HEADER -->
-    <div class="header">
+    <header class="header">
+      <div class="overlay has-fade"></div>
       <nav class="nav flex flex-jc_sb flex-ai_c container-xl">
         <a href="#" class="nav__logo txt-uppercase">
           Medical <strong>Clinic</strong>
@@ -61,20 +62,17 @@
           <span></span>
         </div>
       </nav>
-     
-        <div class="header__menu hide-for-desktop">
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-          <a href="#">Doctors</a>
-          <div class="relative flex flex-ai_c flex-jc_c">
-            <a href="pages/login.html" class="nav__btn btn--secondary">log in</a>
-            <a href="pages/register.html" class="nav__btn btn--secondary"
-              >sign up</a
-            >
-          </div>
+      <div class="header__menu hide-for-desktop has-fade">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Doctors</a>
+        <div class="flex flex-ai_c flex-jc_se">
+          <a href="pages/login.html" class="nav__btn btn--secondary">log in</a>
+          <a href="pages/register.html" class="nav__btn btn--secondary">sign up</a>
         </div>
-    </div>
+      </div>
+    </header>
     <!-- SECTION HOME -->
     <section class="home flex fade-in-fwd container-xl">
       <div

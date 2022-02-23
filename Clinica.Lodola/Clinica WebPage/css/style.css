@@ -616,6 +616,10 @@ p {
   justify-content: center;
 }
 
+.flex-jc_se {
+  justify-content: space-evenly;
+}
+
 .flex-ai_c {
   align-items: center;
 }
@@ -671,6 +675,10 @@ p {
 .btn--secondary:hover {
   background-color: #43cbbe;
   color: #fff;
+}
+
+.has-fade {
+  visibility: hidden;
 }
 
 .svg-config, .svg-check, .svg-location, .svg-search, .svg-message, .svg-instagram, .svg-twitter, .svg-facebook, .svg-linkedin, .svg-envelope, .svg-phone {
@@ -739,13 +747,22 @@ p {
   position: -webkit-sticky;
   top: 0;
   background-color: #ffffff;
-  z-index: 999;
-  border-bottom: 1px solid #808080;
+  z-index: 20;
+}
+.header .overlay {
+  z-index: -1;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2c70dd;
+  background: linear-gradient(180deg, #2c70dd 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .nav {
   height: 80px;
-  z-index: 999;
+  border-bottom: 1px solid #808080;
 }
 .nav__menu-item {
   margin: 0 15px;
@@ -842,26 +859,25 @@ p {
 }
 
 .header__menu {
-  transform: translateY(calc(-100% - 160px));
-  width: 100%;
-  /* height: calc(100vh - 80px); */
+  overflow-y: initial !important;
   position: absolute;
-  opacity: 1;
-  z-index: 40;
+  height: 282px;
+  width: calc(100% - 2rem);
+  transform: translateX(-50%);
+  left: 50%;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
   color: #fff;
   background: #569efd;
-  padding: 1.625rem;
+  border-radius: 10px;
 }
 .header__menu a {
   cursor: pointer;
   color: #fff;
-  padding: 0.625rem;
+  margin: 0.625rem;
   display: block;
   font-size: 1.25rem;
   text-align: center;
-}
-.header__menu a:nth-child(4) {
-  margin-bottom: 30px;
 }
 
 .home {

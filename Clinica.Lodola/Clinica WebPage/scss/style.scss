@@ -87,6 +87,9 @@ p {
 .flex-jc_c {
   justify-content: center;
 }
+.flex-jc_se{
+  justify-content: space-evenly;
+}
 .flex-ai_c {
   align-items: center;
 }
@@ -134,6 +137,9 @@ p {
     color: #fff;
   }
 }
+.has-fade{
+  visibility: hidden;
+}
 
 $icons: (
   phone: url(../img/phone.svg),
@@ -179,12 +185,21 @@ $icons: (
   position: -webkit-sticky;
   top: 0;
   background-color: #ffffff;
-  z-index: 999;
-  border-bottom: 1px solid #808080;
+  z-index: 20;
+  .overlay{
+    z-index: -1;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $first-color;
+background: linear-gradient(180deg, $first-color 0%, rgba(255,255,255,0) 100%);
+  }
 }
 .nav {
   height: 80px;
-  z-index: 999;
+  border-bottom: 1px solid #808080;
   &__menu {
     &-item {
       margin: 0 15px;
@@ -287,25 +302,24 @@ $icons: (
   }
 }
 .header__menu {
-  transform: translateY(calc(-100% - 160px));
-  width: 100%;
-  /* height: calc(100vh - 80px); */
+  overflow-y: initial !important;
   position: absolute;
-  opacity: 1;
-  z-index: 40;
+  height: 282px;
+  width: calc(100% - 2rem);
+  transform: translateX(-50%);
+  left: 50%;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
   color: #fff;
   background: #569efd;
-  padding: 1.625rem;
+  border-radius: 10px;
   a {
     cursor: pointer;
     color: #fff;
-    padding: 0.625rem;
+    margin: 0.625rem;
     display: block;
     font-size: $h2-font-size;
     text-align: center;
-  }
-  a:nth-child(4) {
-    margin-bottom: 30px;
   }
 }
 
