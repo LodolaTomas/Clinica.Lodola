@@ -16,8 +16,10 @@
 </head>
 
 <body class="animated fadeIn">
-  <header class="header container-xl">
-    <nav class="nav flex flex-jc_sb flex-ai_c">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="overlay has-fade"></div>
+    <nav class="nav flex flex-jc_sb flex-ai_c container-xl">
       <a href="../index.html" class="nav__logo txt-uppercase">
         Medical <strong>Clinic</strong>
       </a>
@@ -27,10 +29,14 @@
             <a href="../index.html" class="nav__menu-item_link">Home</a>
           </li>
           <li class="nav__menu-item">
-            <a href="./services.html" class="nav__menu-item_link active">Services</a>
+            <a href="./services.html" class="nav__menu-item_link active"
+              >Services</a
+            >
           </li>
           <li class="nav__menu-item">
-            <a href="./contact.html" class="nav__menu-item_link">Contact</a>
+            <a href="./contact.html" class="nav__menu-item_link"
+              >Contact</a
+            >
           </li>
           <li class="nav__menu-item">
             <a href="./doctors.html" class="nav__menu-item_link"
@@ -41,7 +47,9 @@
       </div>
       <div class="hide-for-mobile relative flex flex-ai_c">
         <a href="./login.html" class="nav__btn btn--primary">log in</a>
-        <a href="./register.html" class="nav__btn btn--secondary">sign up</a>
+        <a href="./register.html" class="nav__btn btn--secondary"
+          >sign up</a
+        >
       </div>
       <div class="nav__burger hide-for-desktop">
         <span></span>
@@ -49,6 +57,16 @@
         <span></span>
       </div>
     </nav>
+    <div class="header__menu hide-for-desktop has-fade">
+      <a href="../index.html">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./doctors.html">Doctors</a>
+      <div class="flex flex-ai_c flex-jc_se">
+        <a href="./login.html" class="nav__btn btn--secondary">log in</a>
+        <a href="./register.html" class="nav__btn btn--secondary">sign up</a>
+      </div>
+    </div>
   </header>
   <!-- SERVICES HOME -->
   <section class="container-xl service__home">
@@ -198,30 +216,50 @@
           <p>10 New Team Street, v2 SNW, Newstate, Usa</p>
         </div>
         <div class="footer__header-information">
-          <a class="footer__link" href="tel:+54-000-000">
-            <p class="svg-phone"></p>
-            <p>+54-000-000</p>
-          </a>
-          <a class="footer__link" href="mailto:contact@medicalclinic.com">
-            <p class="svg-envelope"></p>
-            <p>contact@medicalclinic.com</p>
-          </a>
+          <a class="footer__link" href="tel:+54-000-000"
+            ><p class="svg-phone"></p>
+            <p>+54-000-000</p></a
+          >
+          <a class="footer__link" href="mailto:contact@medicalclinic.com"
+            ><p class="svg-envelope"></p>
+            <p>contact@medicalclinic.com</p></a
+          >
         </div>
         <div class="footer__header-social">
-          <a title="linkedin" target="_blank" href="https://www.linkedin.com/" class="footer__social"
-            rel="noopener noreferrer">
+          <a
+            title="linkedin"
+            target="_blank"
+            href="https://www.linkedin.com/"
+            class="footer__social"
+            rel="noopener noreferrer"
+          >
             <p class="svg-linkedin"></p>
           </a>
-          <a title="facebook" target="_blank" href="https://www.facebook.com/" class="footer__social"
-            rel="noopener noreferrer">
+          <a
+            title="facebook"
+            target="_blank"
+            href="https://www.facebook.com/"
+            class="footer__social"
+            rel="noopener noreferrer"
+          >
             <p class="svg-facebook"></p>
           </a>
-          <a title="twitter" target="_blank" href="https://twitter.com/" class="footer__social"
-            rel="noopener noreferrer">
+          <a
+            title="twitter"
+            target="_blank"
+            href="https://twitter.com/"
+            class="footer__social"
+            rel="noopener noreferrer"
+          >
             <p class="svg-twitter"></p>
           </a>
-          <a title="instagram" target="_blank" href="https://www.instagram.com/" class="footer__social"
-            rel="noopener noreferrer">
+          <a
+            title="instagram"
+            target="_blank"
+            href="https://www.instagram.com/"
+            class="footer__social"
+            rel="noopener noreferrer"
+          >
             <p class="svg-instagram"></p>
           </a>
         </div>
@@ -272,7 +310,11 @@
           citizens who live and transit the City of Buenos Aires.
         </p>
         <form method="GET">
-          <input type="email" placeholder="Enter your email" class="footer__footer-input" />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="footer__footer-input"
+          />
           <button title="sendEmail" class="footer__footer-btn" type="button">
             <i class="svg-message"></i>
           </button>
@@ -283,6 +325,7 @@
       <p>© CopyRight 2022 Medical Clinic All Rights Reserved.</p>
     </div>
   </footer>
+  <script src="../index.js"></script>
 </body>
 
 </html>
